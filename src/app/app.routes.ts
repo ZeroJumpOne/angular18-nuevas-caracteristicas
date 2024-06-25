@@ -54,6 +54,11 @@ export const routes: Routes = [
             loadComponent: () => import('./dashboard/pages/frm-input-output/frm-input-output.component').then( c => c.FrmInputOutputComponent),
          },
          {
+            path: 'material',
+            title: 'Material 3',
+            loadComponent: () => import('./dashboard/pages/frm-material/frm-material.component').then( c => c.FrmMaterialComponent),
+         },
+         {
             path: '',
             redirectTo: 'control-flow',
             pathMatch: 'full',

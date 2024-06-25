@@ -1,0 +1,22 @@
+<app-title titulo="Material 3 Components"></app-title>
+<hr class="my-2">
+
+<div class="grid grid-cols-1 sm:grid-cols-3">
+
+   <p><mat-slide-toggle>Slide me!</mat-slide-toggle></p>
+   <p><mat-slide-toggle labelPosition="before">...and slide me too!</mat-slide-toggle></p>
+
+   <div class="demo-section">
+      Icon with a badge
+      <mat-icon matBadge="15" aria-hidden="false">home</mat-icon>
+        <!-- Include text description of the icon's meaning for screen-readers -->
+        <span class="cdk-visually-hidden">
+          Example with a home icon with overlaid badge showing the number 15
+        </span>
+    </div>
+
+    <div>
+       <button (click)="openBottomSheet()" mat-raised-button color="Bottom Sheet">Basic</button>
+    </div>
+
+</div>
