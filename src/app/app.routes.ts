@@ -49,6 +49,11 @@ export const routes: Routes = [
             loadComponent: () => import('./dashboard/pages/frm-view-transition2/frm-view-transition2.component').then( c => c.FrmViewTransition2Component),
          },
          {
+            path: 'input-output',
+            title: 'Inputs/Outputs',
+            loadComponent: () => import('./dashboard/pages/frm-input-output/frm-input-output.component').then( c => c.FrmInputOutputComponent),
+         },
+         {
             path: '',
             redirectTo: 'control-flow',
             pathMatch: 'full',
